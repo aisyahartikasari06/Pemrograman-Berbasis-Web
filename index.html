@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio Aisyah Artika Sari, mahasiswi Ilmu Komputer Universitas Muhammadiyah Bangka Belitung.">
+  <title>Aisyah Artika Sari — My Little World</title>
+  <!-- Google Fonts hanya memuat huruf, bukan framework. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="intro-open">
+
+  <div id="openingCover" class="opening opening-modern" role="dialog" aria-modal="true" aria-labelledby="openingTitle">
+    <div class="opening-glow" aria-hidden="true"></div>
+    <div class="petals" id="introPetals" aria-hidden="true"></div>
+
+    <!-- Menu mini khusus cover. Setiap menu benar-benar membuka section tujuan. -->
+    <header class="opening-topbar" aria-label="Navigasi cover portofolio">
+      <a href="#beranda" class="opening-brand" data-cover-target="beranda" aria-label="Aisyah — buka beranda">✿</a>
+      <nav class="opening-topnav" aria-label="Jelajahi portofolio">
+        <a href="#beranda" class="is-current" data-cover-target="beranda">Home</a>
+        <a href="#tentang" data-cover-target="tentang">About</a>
+        <a href="#pengalaman" data-cover-target="pengalaman">Experience</a>
+        <a href="#belajar" data-cover-target="belajar">Learning</a>
+        <a href="#proyek" data-cover-target="proyek">Project</a>
+        <a href="#sertifikat" data-cover-target="sertifikat">Certificates</a>
+        <a href="#kontak" data-cover-target="kontak">Contact</a>
+      </nav>
+      <a href="#kontak" class="opening-connect" data-cover-target="kontak">✿ <span>Let's Connect</span> ↗</a>
+    </header>
+
+    <div class="opening-grid">
+      <div class="opening-inner">
+        <p class="eyebrow">✿ A PERSONAL PORTFOLIO</p>
+        <h1 id="openingTitle"><span>Aisyah</span><em>Artika Sari</em></h1>
+        <p class="opening-role">Computer Science Student</p>
+        <p class="opening-softline">Still learning, still growing with creativity and purpose.</p>
+        <p class="opening-description">Mahasiswi Ilmu Komputer semester 5 di Universitas Muhammadiyah Bangka Belitung. Saat ini saya sedang belajar dasar pemrograman, Python, pengembangan web, analisis data, dan Machine Learning, sambil menyalurkan kreativitas melalui desain digital.</p>
+        <div class="opening-action-row">
+          <button id="enterButton" class="button button-primary" type="button">✿ <span>Lihat Portofolio</span><span aria-hidden="true">⟶</span></button>
+          <button id="openingAboutButton" class="button button-outline" type="button">Tentang Saya <span aria-hidden="true">→</span></button>
+        </div>
+        <div class="opening-pills" aria-label="Ringkasan minat dan proses belajar">
+          <span>⌘ Semester 5</span>
+          <span>⌨ Python &amp; Front-End Learner</span>
+          <span>▥ Data &amp; ML Explorer</span>
+          <span>✿ Creative Design</span>
+        </div>
+      </div>
+
+      <div class="opening-art" aria-label="Foto profil Aisyah dan minat yang sedang dipelajari">
+        <span class="opening-orbit opening-orbit-one" aria-hidden="true"></span>
+        <span class="opening-orbit opening-orbit-two" aria-hidden="true"></span>
+        <img class="opening-fleur opening-fleur-top" src="assets/lily-watercolor-transparent.webp" alt="" aria-hidden="true" loading="eager">
+        <div class="opening-portrait">
+          <div class="opening-photo-ring" aria-hidden="true"></div>
+          <div class="opening-photo-frame"><img src="assets/foto-profil.jpg" alt="Foto Aisyah Artika Sari" loading="eager"></div>
+        </div>
+        <img class="opening-fleur opening-fleur-bottom" src="assets/lily-pink-transparent.webp" alt="" aria-hidden="true" loading="eager">
+        <div class="opening-note opening-note-learning">
+          <span class="opening-note-icon" aria-hidden="true">⌘</span>
+          <strong>Currently Learning</strong>
+          <small>Python • HTML • CSS<br>JavaScript • Data &amp; ML</small>
+        </div>
+        <div class="opening-note opening-note-creative">
+          <span class="opening-note-icon" aria-hidden="true">✿</span>
+          <strong>Creative Interests</strong>
+          <small>Book Cover Design<br>Figma • CapCut</small>
+        </div>
+      </div>
+    </div>
+    <button class="opening-scroll" type="button" data-cover-target="beranda" aria-label="Buka dan jelajahi halaman portofolio"><span aria-hidden="true">↓</span> SCROLL TO EXPLORE</button>
+  </div>
+
+  <div id="portfolioSite" class="site" aria-hidden="true" inert>
+    <div class="page-floral-background" aria-hidden="true"></div>
+    <!-- Bunga yang tersisa sebagai ornamen dekoratif; tidak menyatu dengan tombol dan teks. -->
+    <div class="petals site-petals" id="sitePetals" aria-hidden="true"></div>
+
+    <header class="header" id="siteHeader">
+      <div class="container header-inner">
+        <a class="logo" href="#beranda" aria-label="Aisyah — kembali ke beranda">A<span>✿</span></a>
+        <nav class="nav" id="mainNav" aria-label="Navigasi utama">
+          <a href="#beranda">Beranda</a>
+          <a href="#tentang">Tentang Saya</a>
+          <a href="#belajar">Learning</a>
+          <a href="#algoritma">Algoritma</a>
+          <a href="#karya">Karya</a>
+          <a href="#keahlian">Keahlian</a>
+          <a href="#pengalaman">Pengalaman</a>
+          <a href="#sertifikat">Sertifikat</a>
+          <a href="#prinsip">Prinsip</a>
+          <a href="#kontak">Kontak</a>
+        </nav>
+        <div class="header-actions">
+          <button id="themeButton" class="icon-button" type="button" aria-label="Ubah tema gelap atau terang" title="Ubah tema">☾</button>
+          <button id="menuButton" class="icon-button menu-button" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="Buka navigasi">☰</button>
+        </div>
+      </div>
+      <div id="scrollProgress" class="scroll-progress" aria-hidden="true"></div>
+    </header>
+
+    <main>
+
+      <section id="beranda" class="section hero container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">01 / HELLO, WELCOME TO MY SPACE</p>
+          <p class="script-heading">Halo, saya</p>
+          <h2 class="hero-name">Aisyah<br><span>Artika Sari</span></h2>
+          <p class="subtitle">Computer Science Student • Learning in Progress • Creative Soul</p>
+          <p class="hero-quote">“Growing at my own pace, blooming in my own way.”</p>
+          <p class="body-copy">Mahasiswi semester 5 Ilmu Komputer di Universitas Muhammadiyah Bangka Belitung. Saya sedang mempelajari Python, dasar pemrograman, front-end, analisis data, dan Machine Learning, serta menyalurkan kreativitas melalui desain.</p>
+          <div class="button-row">
+            <a href="#belajar" class="button button-primary">Lihat Perjalanan Belajar ↗</a>
+            <a href="#tentang" class="button button-outline">Kenali Saya ↓</a>
+          </div>
+        </div>
+        <div class="hero-photo-area reveal">
+          <!-- Gunakan foto profil asli dari proyek portofolio sebelumnya -->
+          <div class="portrait-halo"></div>
+          <div class="portrait-frame"><img src="assets/foto-profil.jpg" alt="Foto profil Aisyah" loading="eager"></div>
+          <div class="floating-note note-top">✿ <span>Still learning,<br>still blooming</span></div>
+          <div class="floating-note note-bottom">a quiet mind,<br>a colorful soul ♡</div>
+          <img class="hero-lily" src="assets/lily-pink-transparent.webp" alt="" aria-hidden="true">
+        </div>
+      </section>
+
+      <section id="tentang" class="section container">
+        <img class="floral-accent floral-about" src="assets/lily-watercolor-transparent.webp" alt="" aria-hidden="true" loading="lazy">
+        <div class="glass-panel about-panel reveal">
+          <div class="section-side">
+            <p class="section-index">02 / ABOUT ME</p>
+            <h2>Di Antara<br><em>Logika</em> dan<br>Kreativitas</h2>
+            <p class="section-scribble">Where logic meets creativity.</p>
+            <!-- Ornamen di kolom judul agar komposisi About Me tidak kosong. -->
+            <div class="about-side-bottom">
+              <img class="about-side-flower" src="assets/lily-watercolor-transparent.webp" alt="" aria-hidden="true" loading="lazy">
+              <a class="about-skills-link" href="#keahlian">Lihat Skills &amp; Tools <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <div class="about-story">
+            <h3>Halo, Saya Aisyah! <span class="flower-text">✿</span></h3>
+            <p>Saya <strong>Aisyah Artika Sari</strong>, mahasiswi semester 5 Program Studi Ilmu Komputer di <strong>Universitas Muhammadiyah Bangka Belitung</strong>. Saat ini, saya masih berada dalam tahap pembelajaran dan eksplorasi berbagai bidang teknologi, khususnya Python, dasar pemrograman, <em>Front-End Development</em>, analisis data, dan Machine Learning. Saya memiliki ketertarikan untuk memahami bagaimana teknologi dapat dikembangkan menjadi solusi yang kreatif dan bermanfaat. Selain memperluas pengetahuan akademik, saya juga mengembangkan minat di bidang desain digital melalui pembuatan cover buku. Pengalaman menjadi <strong>moderator webinar online</strong> turut memberikan kesempatan bagi saya untuk melatih kemampuan komunikasi, koordinasi, dan kepercayaan diri. Berbagai pengalaman tersebut menjadi bagian dari perjalanan saya dalam mengenali potensi serta mengembangkan keterampilan secara bertahap.</p>
+            <p>Secara pribadi, saya merupakan individu yang cenderung tenang dan observatif ketika berada di lingkungan baru, tetapi dapat menjadi lebih terbuka, komunikatif, dan ceria setelah membangun kedekatan dengan orang lain. Saya percaya bahwa proses pengembangan diri membutuhkan kemauan untuk belajar, keberanian mencoba hal baru, serta kesiapan menghadapi tantangan. Meskipun masih dalam proses menemukan bidang yang ingin saya tekuni lebih jauh, saya berkomitmen untuk terus memperluas wawasan, mengembangkan kemampuan berpikir kritis, meningkatkan kerja sama, dan membangun sikap yang adaptif. Bagi saya, setiap pengalaman merupakan kesempatan untuk bertumbuh dan mempersiapkan diri menghadapi dunia profesional di masa depan.</p>
+            <p class="about-closing-line">“Still learning, still exploring, and growing with purpose.”</p>
+          </div>
+          <div class="about-highlights">
+            <div class="mini-card"><span class="mini-icon">⌘</span><b>Technology &amp; Logic</b><small>Memahami konsep komputasi melalui pembelajaran bertahap.</small></div>
+            <div class="mini-card"><span class="mini-icon">✧</span><b>Creative Expression</b><small>Mengeksplorasi desain visual, khususnya cover buku.</small></div>
+            <div class="mini-card"><span class="mini-icon">✿</span><b>Communication &amp; Growth</b><small>Mengasah kemampuan komunikasi melalui pengalaman webinar.</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="belajar" class="section container">
+        <img class="floral-accent floral-learning" src="assets/lily-watercolor-transparent.webp" alt="" aria-hidden="true" loading="lazy">
+        <div class="section-heading reveal">
+          <div><p class="section-index">03 / MY LEARNING JOURNEY</p><h2>My Learning <em>Journey</em> <span class="flower-text">✿</span></h2><p>“Learning the fundamentals, exploring new possibilities, and growing step by step.”</p></div>
+          <span class="label-flower">✧ Growing, not rushing ✧</span>
+        </div>
+        <div class="learning-code-link reveal"><span>✿ Penasaran dengan latihan dan tugas coding saya?</span><a href="https://github.com/aisyahartikasari06" target="_blank" rel="noopener noreferrer">Explore My GitHub ↗</a></div>
+        <div class="card-grid learning-four-grid">
+          <!-- Kartu 1: tombol detail akan dibuka dengan dialog JavaScript. -->
+          <article class="project-card reveal">
+            <div class="project-art project-art-fundamentals"><img class="project-art-flower flower-fundamentals" src="assets/lily-watercolor-transparent.webp" alt="" aria-hidden="true" loading="lazy"><div class="coding-mark" aria-hidden="true">&lt;/&gt;</div><span class="art-small-label">Python · Logic · Algorithms</span></div>
+            <div class="project-card-body"><span class="tag">01 · Currently Learning</span><h3>Programming Fundamentals</h3><p>Saya sedang mempelajari Python, logika pemrograman, algoritma, dan struktur data. Saya berlatih menyusun kode untuk menyelesaikan masalah sederhana sekaligus membangun cara berpikir yang sistematis.</p><button class="text-button detail-trigger" type="button" data-title="Programming Fundamentals — Dalam Pembelajaran" data-description="Saya sedang belajar bahasa Python, logika, algoritma, dan struktur data. Saya masih memperkuat dasar-dasarnya melalui praktik dan tugas perkuliahan.">Lihat detail ↗</button></div>
+          </article>
+          <!-- Kartu 2: tombol detail akan dibuka dengan dialog JavaScript. -->
+          <article class="project-card reveal">
+            <div class="project-art project-art-frontend"><img class="project-art-flower flower-frontend" src="assets/lily-pink-transparent.webp" alt="" aria-hidden="true" loading="lazy"><span class="project-art-label">&lt; HTML · CSS · JS /&gt;</span><span class="project-art-script">Creating, step by step</span></div>
+            <div class="project-card-body"><span class="tag">02 · Currently Learning</span><h3>Front-End Development</h3><p>Saya sedang mempelajari pengembangan antarmuka website menggunakan HTML, CSS, dan JavaScript. Pembelajaran ini berfokus pada pemahaman struktur halaman, pengaturan tampilan, serta penerapan interaktivitas untuk membangun website yang responsif dan mudah digunakan.</p><button class="text-button detail-trigger" type="button" data-title="Front-End Development — Dalam Pembelajaran" data-description="Saya sedang mempelajari HTML untuk struktur halaman, CSS untuk tampilan dan responsivitas, serta JavaScript untuk interaksi. Website portofolio pribadi ini adalah latihan yang sedang saya kerjakan menggunakan ketiganya tanpa framework.">Lihat detail ↗</button></div>
+          </article>
+          <!-- Kartu 3: tombol detail akan dibuka dengan dialog JavaScript. -->
+          <article class="project-card reveal">
+            <div class="project-art project-art-data"><img class="project-art-flower flower-data" src="assets/lily-watercolor-transparent.webp" alt="" aria-hidden="true" loading="lazy"><span class="data-bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><small>exploring patterns</small></div>
+            <div class="project-card-body"><span class="tag">03 · Exploring & Learning</span><h3>Data Analytics</h3><p>Saya mulai mengeksplorasi bidang analisis data untuk memahami proses pengolahan, analisis, dan visualisasi data. Ketertarikan ini mendorong saya untuk mempelajari bagaimana data dapat diubah menjadi informasi yang bermanfaat dalam mendukung pengambilan keputusan.</p><button class="text-button detail-trigger" type="button" data-title="Data Analytics — Dalam Pembelajaran" data-description="Saya masih dalam tahap mengenal konsep Data Analytics, bukan seorang analis data profesional. Saya ingin mempelajari cara membaca, mengolah, dan memvisualisasikan data untuk memahami pola serta menyampaikan temuan secara jelas.">Lihat detail ↗</button></div>
+          </article>
+          <!-- Bidang keempat: Machine Learning masih dipelajari, bukan klaim keahlian. -->
+          <article class="project-card reveal">
+            <div class="project-art project-art-ml">
+              <img class="project-art-flower flower-ml" src="assets/lily-watercolor-transparent.webp" alt="" aria-hidden="true" loading="lazy">
+              <span class="ml-illustration" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+              <span class="art-small-label">Patterns · Models · Evaluation</span>
+            </div>
+            <div class="project-card-body">
+              <span class="tag">04 · Currently Learning</span>
+              <h3>Machine Learning</h3>
+              <p>Saya sedang mempelajari konsep dasar Machine Learning, seperti persiapan data, pelatihan model, dan evaluasi hasil. Saya juga mengikuti penelitian kelompok yang membandingkan Logistic Regression dan Random Forest untuk mendeteksi fraud kartu kredit.</p>
+              <button class="text-button detail-trigger" type="button" data-title="Machine Learning — Dalam Pembelajaran" data-description="Saya masih dalam tahap mempelajari Machine Learning menggunakan Python, mulai dari persiapan data, pembagian data latih dan uji, pelatihan model, hingga evaluasi klasifikasi. Saya mempelajarinya melalui penelitian kelompok tentang perbandingan Logistic Regression dan Random Forest untuk deteksi fraud kartu kredit.">Lihat detail ↗</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+
+      <!-- ========================================================
+           04. PENELITIAN AKADEMIK KELOMPOK (PDF ASLI)
+           Menggunakan PDF penelitian yang diberikan pengguna.
+           Notebook Python sebelumnya tidak disertakan.
+           ======================================================== -->
+      <section id="proyek" class="section container actual-project-section">
+        <img class="floral-accent floral-project" src="assets/lily-watercolor-transparent.webp" alt="" aria-hidden="true" loading="lazy">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-index">04 / MY ACADEMIC RESEARCH</p>
+            <h2>Academic <em>Research</em> <span class="flower-text">✿</span></h2>
+            <p>Penelitian kelompok dalam mata kuliah Metode Penelitian, sebagai bagian dari proses saya mempelajari Machine Learning.</p>
+          </div>
+        </div>
+        <article class="glass-panel featured-project reveal" aria-labelledby="fraudProjectTitle">
+          <div class="featured-project-copy">
+            <span class="tag">Group Research · Metode Penelitian</span>
+            <h3 id="fraudProjectTitle">Deteksi Fraud <em>Kartu Kredit</em></h3>
+            <p><strong>“Perbandingan Kinerja Logistic Regression dan Random Forest dalam Deteksi Fraud Transaksi Kartu Kredit pada Data Tidak Seimbang.”</strong></p>
+            <p>Penelitian kelompok ini membandingkan <strong>Logistic Regression</strong> dan <strong>Random Forest</strong> untuk mendeteksi transaksi fraud pada dataset yang sangat tidak seimbang. Analisis mencakup prapemrosesan data, pembagian data secara terstratifikasi, serta evaluasi menggunakan precision, recall, F1-score, dan confusion matrix.</p>
+            <div class="project-tech-list" aria-label="Topik penelitian">
+              <span>Machine Learning</span><span>Logistic Regression</span><span>Random Forest</span><span>Imbalanced Data</span>
+            </div>
+            <div class="featured-project-actions">
+              <a class="button button-primary" href="projects/Penelitian_Deteksi_Fraud_Kartu_Kredit.pdf" target="_blank" rel="noopener noreferrer">Baca PDF Penelitian ↗</a>
+              <a class="button button-outline" href="projects/Penelitian_Deteksi_Fraud_Kartu_Kredit.pdf" download>Unduh PDF ↧</a>
+            </div>
+            <p class="featured-project-note">Penelitian ini disusun bersama <strong>Anisa Suci Qomarah</strong> dan <strong>Mohsen Bandar Abdulqader Al-Mhiqani</strong>. Dokumen yang tersedia adalah PDF laporan penelitian kelompok, bukan aplikasi fraud detection maupun notebook program.</p>
+          </div>
+          <div class="featured-project-visual research-paper-visual" aria-label="Pratinjau dokumen dan ringkasan hasil penelitian kelompok">
+            <div class="project-visual-top"><span>RESEARCH PAPER · 9 PAGES</span><span class="project-mini-flower" aria-hidden="true">✿</span></div>
+            <a class="research-paper-thumbnail" href="projects/Penelitian_Deteksi_Fraud_Kartu_Kredit.pdf" target="_blank" rel="noopener noreferrer" aria-label="Buka dokumen penelitian PDF sembilan halaman">
+              <img src="assets/pratinjau-penelitian-fraud.webp" loading="lazy" alt="Halaman pertama PDF penelitian perbandingan Logistic Regression dan Random Forest" />
+              <span>Lihat dokumen lengkap ↗</span>
+            </a>
+            <div class="project-metrics" aria-label="F1-Score model dari Tabel 1 penelitian">
+              <div><small>LR · F1-Score</small><strong>83,43%</strong></div>
+              <div><small>RF · F1-Score</small><strong>85,28%</strong></div>
+              <div><small>Data Transaksi</small><strong>284.807</strong></div>
+            </div>
+            <p class="project-visual-note">Ringkasan sesuai dataset dan Tabel 1 dalam PDF penelitian (halaman 4 dan 6). Random Forest unggul pada recall dan F1-score, sedangkan Logistic Regression memiliki precision lebih tinggi.</p>
+          </div>
+        </article>
+      </section>
+
+      <section id="algoritma" class="section container">
+        <img class="floral-accent floral-algorithm" src="assets/lily-watercolor-transparent.webp" alt="" aria-hidden="true" loading="lazy">
+        <div class="glass-panel algorithm-panel reveal">
+          <div class="section-side"><p class="section-index">05 / ALGORITHM PLAYGROUND</p><h2>Visualisasi<br><em>Algoritma</em> ✿</h2><p>Belajar cara kerja pengurutan angka secara visual dan interaktif.</p><p class="section-scribble">Let's see how it works!</p></div>
+          <div class="sort-area">
+            <div class="algorithm-actions"><span class="tag">Bubble Sort</span><button class="button button-primary button-small" id="playSort" type="button">Mulai ▶</button><button class="button button-outline button-small" id="stepSort" type="button">1 langkah →</button><button class="button button-outline button-small" id="randomSort" type="button">Acak Ulang ↻</button></div>
+            <div class="sort-visual" id="sortVisual" role="img" aria-label="Grafik batang visualisasi angka yang diurutkan"></div>
+            <div class="sort-footer"><label for="sortSpeed">Kecepatan animasi</label><input id="sortSpeed" type="range" min="1" max="5" value="3"><span id="sortStatus" aria-live="polite">Siap untuk memulai</span></div>
+          </div>
+          <div class="sort-stats"><h3>Proses saat ini</h3><p id="sortExplanation" aria-live="polite">Klik Mulai atau 1 langkah untuk membandingkan dua angka.</p><div><span>Perbandingan</span><strong id="compareCount">0</strong></div><div><span>Pertukaran</span><strong id="swapCount">0</strong></div><div><span>Langkah</span><strong id="stepCount">0</strong></div></div>
+        </div>
+      </section>
+
+      <section id="karya" class="section container showcase-section">
+        <img class="floral-accent floral-creative" src="assets/lily-pink-transparent.webp" alt="" aria-hidden="true" loading="lazy">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-index">06 / CREATIVE WORKS</p>
+            <h2>Stories Through <em>Design</em> <span class="flower-text">✿</span></h2>
+            <p>Tiga desain cover buku yang pernah saya buat. Melalui setiap karya, saya mengeksplorasi komposisi, warna, tipografi, dan cara menyampaikan pesan secara visual.</p>
+          </div>
+          <span class="label-flower">✧ Creativity in every detail ✧</span>
+        </div>
+        <div class="work-intro reveal">
+          <div class="work-intro-bloom" aria-hidden="true">✿</div>
+          <p><strong>From ideas to visual stories.</strong> Setiap cover memiliki karakter yang berbeda. Klik salah satu karya untuk melihat gambar asli dalam ukuran lebih besar.</p>
+          <span class="work-intro-note">03 REAL COVER DESIGNS &nbsp; • &nbsp; CLICK TO EXPLORE ↗</span>
+        </div>
+        <div class="creative-grid creative-gallery">
+          <button type="button" class="book-card book-card-first reveal detail-trigger" data-gallery="covers"
+            data-title="Kemajemukan sebagai Kekuatan Bangsa" data-description="Desain cover buku ‘Kemajemukan sebagai Kekuatan Bangsa — Kumpulan Essay PGSD 2024’. Karya ini mengeksplorasi identitas keberagaman melalui ilustrasi budaya, komposisi visual, serta warna yang ekspresif."
+            data-image="assets/cover-kemajemukan.webp" aria-label="Perbesar desain cover Kemajemukan sebagai Kekuatan Bangsa">
+            <span class="book-art"><span class="book-glow" aria-hidden="true"></span><img src="assets/cover-kemajemukan.webp" loading="lazy" alt="Desain cover Kemajemukan sebagai Kekuatan Bangsa"><span class="book-view" aria-hidden="true">Lihat cover <span>↗</span></span></span>
+            <span class="book-meta"><span class="book-number">01 / BOOK COVER</span><strong>Kemajemukan sebagai Kekuatan Bangsa</strong><small>Kumpulan Essay PGSD 2024</small></span>
+          </button>
+          <button type="button" class="book-card book-card-second reveal detail-trigger" data-gallery="covers"
+            data-title="Luna dan Tudung Saji Ajaib" data-description="Desain cover buku ‘Luna dan Tudung Saji Ajaib — Antologi Dongeng Masyarakat Bangka Belitung’. Karya ini mengangkat suasana cerita dongeng melalui ilustrasi, nuansa alam, dan elemen budaya lokal."
+            data-image="assets/cover-luna.webp" aria-label="Perbesar desain cover Luna dan Tudung Saji Ajaib">
+            <span class="book-art"><span class="book-glow" aria-hidden="true"></span><img src="assets/cover-luna.webp" loading="lazy" alt="Desain cover Luna dan Tudung Saji Ajaib"><span class="book-view" aria-hidden="true">Lihat cover <span>↗</span></span></span>
+            <span class="book-meta"><span class="book-number">02 / BOOK COVER</span><strong>Luna dan Tudung Saji Ajaib</strong><small>Antologi Dongeng Masyarakat Bangka Belitung</small></span>
+          </button>
+          <button type="button" class="book-card book-card-third reveal detail-trigger" data-gallery="covers"
+            data-title="Massage Olahraga" data-description="Desain cover buku ‘Massage Olahraga — Teknik, Manfaat, Aplikasi, Pencegahan Cedera dan Peningkatan Performa’. Karya ini menggunakan pendekatan visual informatif dengan fotografi, ikon, serta komposisi bernuansa biru."
+            data-image="assets/cover-massage.webp" aria-label="Perbesar desain cover Massage Olahraga">
+            <span class="book-art"><span class="book-glow" aria-hidden="true"></span><img src="assets/cover-massage.webp" loading="lazy" alt="Desain cover Massage Olahraga"><span class="book-view" aria-hidden="true">Lihat cover <span>↗</span></span></span>
+            <span class="book-meta"><span class="book-number">03 / BOOK COVER</span><strong>Massage Olahraga</strong><small>Desain cover materi olahraga dan kesehatan</small></span>
+          </button>
+        </div>
+        <p class="showcase-footnote reveal">✿ Tiga karya dengan karakter visual berbeda — bagian dari eksplorasi saya dalam desain grafis.</p>
+      </section>
+
+      <section id="keahlian" class="section container">
+        <img class="floral-accent floral-skills" src="assets/lily-watercolor-transparent.webp" alt="" aria-hidden="true" loading="lazy">
+        <div class="section-heading reveal"><div><p class="section-index">07 / SKILLS &amp; TOOLS</p><h2>Skills, Tools <em>&amp; Growth</em></h2><p>Kemampuan dan aplikasi yang sedang saya pelajari atau gunakan selama perkuliahan. Klik setiap kartu untuk mengetahui proses belajar saya.</p></div></div>
+        <!-- Setiap kartu merupakan BUTTON agar bisa diklik dengan mouse, Enter, atau Space. -->
+        <div class="card-grid skill-five-grid">
+          <button class="skill-card reveal detail-trigger" type="button"
+            data-title="Programming — Sedang Belajar"
+            data-description="Saya sedang mempelajari Python, logika pemrograman, algoritma, dan struktur data melalui materi serta latihan perkuliahan. Saya masih membangun kemampuan dasarnya secara bertahap."
+            aria-label="Buka detail Programming">
+            <span class="skill-icon" aria-hidden="true">⌘</span>
+            <span class="skill-name">Programming</span>
+            <span class="skill-desc">Mempelajari Python, logika, algoritma, dan struktur data.</span>
+            <span class="skill-bottom"><span class="tag">Learning</span><span class="skill-arrow" aria-hidden="true">↗</span></span>
+          </button>
+          <button class="skill-card reveal detail-trigger" type="button"
+            data-title="Front-End Development — Sedang Belajar"
+            data-description="Saya mempelajari HTML untuk menyusun isi halaman, CSS untuk mengatur tampilan dan animasi, serta JavaScript untuk membuat tombol dan fitur interaktif. Website portofolio bunga lily ini adalah latihan nyata yang sedang saya kembangkan tanpa framework."
+            aria-label="Buka detail Front-End Development">
+            <span class="skill-icon" aria-hidden="true">▥</span>
+            <span class="skill-name">Front-End Development</span>
+            <span class="skill-desc">Sedang belajar HTML, CSS, dan JavaScript untuk membuat tampilan website.</span>
+            <span class="skill-bottom"><span class="tag">Learning</span><span class="skill-arrow" aria-hidden="true">↗</span></span>
+          </button>
+          <button class="skill-card reveal detail-trigger" type="button"
+            data-title="Data Analytics — Dalam Eksplorasi"
+            data-description="Saya tertarik mengenal cara mengumpulkan, membersihkan, membaca, menganalisis, dan memvisualisasikan data agar informasi lebih mudah dipahami. Saat ini saya masih mengeksplorasi bidang tersebut dan belum menetapkan spesialisasi karier secara pasti."
+            aria-label="Buka detail Data Analytics">
+            <span class="skill-icon" aria-hidden="true">▥</span>
+            <span class="skill-name">Data Analytics</span>
+            <span class="skill-desc">Tertarik menjelajahi pengolahan dan visualisasi data.</span>
+            <span class="skill-bottom"><span class="tag">Exploring</span><span class="skill-arrow" aria-hidden="true">↗</span></span>
+          </button>
+          <button class="skill-card reveal detail-trigger" type="button"
+            data-title="Machine Learning — Sedang Belajar"
+            data-description="Saya mulai belajar persiapan data, pelatihan dan evaluasi model Machine Learning dengan Python. Penelitian kelompok saya membandingkan Logistic Regression dan Random Forest pada klasifikasi transaksi kartu kredit. Saya masih dalam tahap belajar dan belum mengklaim sebagai praktisi profesional."
+            aria-label="Buka detail Machine Learning">
+            <span class="skill-icon" aria-hidden="true">◎</span>
+            <span class="skill-name">Machine Learning</span>
+            <span class="skill-desc">Belajar melatih dan mengevaluasi model menggunakan Python.</span>
+            <span class="skill-bottom"><span class="tag">Learning</span><span class="skill-arrow" aria-hidden="true">↗</span></span>
+          </button>
+          <button class="skill-card reveal detail-trigger" type="button"
+            data-title="Creative & Communication — Pengalaman dan Minat"
+            data-description="Saya senang bereksplorasi dengan warna, tipografi, dan komposisi saat membuat desain cover buku. Saya juga pernah menjadi moderator webinar online. Pengalaman tersebut membantu saya melatih komunikasi, keberanian berbicara, dan kepercayaan diri."
+            aria-label="Buka detail Creative & Communication">
+            <span class="skill-icon" aria-hidden="true">✿</span>
+            <span class="skill-name">Creative &amp; Communication</span>
+            <span class="skill-desc">Desain cover buku dan pengalaman menjadi moderator webinar online.</span>
+            <span class="skill-bottom"><span class="tag">Experience &amp; Interest</span><span class="skill-arrow" aria-hidden="true">↗</span></span>
+          </button>
+        </div>
+
+        <!-- Subbagian software: ditampilkan sebagai tools yang dipakai/dipelajari,
+             tidak menggunakan persentase keahlian atau klaim sudah mahir. -->
+        <div class="learning-subheading reveal">
+          <div>
+            <p class="section-index">SOFTWARE &amp; TOOLS</p>
+            <h3>Tools I Use <em>&amp; Learn</em></h3>
+            <p>Beberapa aplikasi yang saya gunakan atau sedang saya pelajari untuk tugas kuliah, presentasi, desain, dan latihan teknologi.</p>
+          </div>
+        </div>
+        <div class="tool-grid">
+          <button class="tool-card reveal detail-trigger" type="button" data-title="Microsoft Word" data-description="Saya menggunakan Microsoft Word untuk menyusun dokumen dan tugas perkuliahan. Saya masih terus belajar menggunakan fitur-fiturnya agar penulisan lebih rapi dan terstruktur.">
+            <span class="tool-logo tool-word" aria-hidden="true">W</span><strong>Microsoft Word</strong><small>Dokumen &amp; tugas</small><span class="tool-state">Learning &amp; Using ↗</span>
+          </button>
+          <button class="tool-card reveal detail-trigger" type="button" data-title="Microsoft Excel" data-description="Saya ingin meningkatkan kemampuan menggunakan Microsoft Excel untuk mengorganisasi data, mengenal rumus, tabel, dan visualisasi sederhana. Saat ini kemampuan ini masih saya kembangkan secara bertahap.">
+            <span class="tool-logo tool-excel" aria-hidden="true">X</span><strong>Microsoft Excel</strong><small>Tabel &amp; data dasar</small><span class="tool-state">Learning ↗</span>
+          </button>
+          <button class="tool-card reveal detail-trigger" type="button" data-title="Microsoft PowerPoint" data-description="Microsoft PowerPoint saya gunakan sebagai salah satu media membuat dan menyusun presentasi. Saya masih belajar menyajikan informasi secara lebih jelas, ringkas, dan menarik.">
+            <span class="tool-logo tool-ppt" aria-hidden="true">P</span><strong>PowerPoint</strong><small>Presentasi</small><span class="tool-state">Learning &amp; Using ↗</span>
+          </button>
+          <button class="tool-card reveal detail-trigger" type="button" data-title="Canva" data-description="Canva menjadi salah satu aplikasi yang dapat digunakan untuk mengeksplorasi layout, tipografi, dan komposisi warna. Saya mengembangkan kreativitas melalui desain cover buku dan karya visual."
+            ><span class="tool-logo tool-canva" aria-hidden="true">C</span><strong>Canva</strong><small>Desain kreatif</small><span class="tool-state">Creative Practice ↗</span>
+          </button>
+          <button class="tool-card reveal detail-trigger" type="button" data-title="Visual Studio Code" data-description="Saya menggunakan Visual Studio Code untuk belajar HTML, CSS, JavaScript, dan latihan pemrograman. Saya masih terus mengenal fitur-fiturnya."
+            ><span class="tool-logo tool-code" aria-hidden="true">&lt;/&gt;</span><strong>VS Code</strong><small>Belajar coding</small><span class="tool-state">Learning ↗</span>
+          </button>
+          <button class="tool-card reveal detail-trigger" type="button" data-title="Python & Jupyter Notebook — Sedang Belajar" data-description="Saya sedang mempelajari Python dan menggunakan notebook untuk latihan pemrosesan data dan Machine Learning. Saya sedang belajar Python dan Jupyter untuk tugas serta latihan pemrograman dan pengolahan data; penelitian kelompok mengenai deteksi fraud saya tampilkan pada bagian Academic Research.">
+            <span class="tool-logo tool-python" aria-hidden="true">Py</span><strong>Python &amp; Jupyter</strong><small>Latihan kode &amp; model</small><span class="tool-state">Learning ↗</span>
+          </button>
+          <!-- Figma: desain UI; keterampilannya terus dikembangkan. -->
+          <button class="tool-card reveal detail-trigger" type="button" data-title="Figma — UI/UX Exploration" data-description="Saya dapat menggunakan Figma untuk mencoba membuat rancangan antarmuka, menyusun elemen visual, dan mengenal proses desain UI/UX. Saya masih mengembangkan kemampuan desain dan prototyping secara bertahap.">
+            <span class="tool-logo tool-figma" aria-hidden="true">F</span><strong>Figma</strong><small>Desain antarmuka</small><span class="tool-state">Learning &amp; Using ↗</span>
+          </button>
+          <!-- CapCut: keterampilan editing video tingkat belajar. -->
+          <button class="tool-card reveal detail-trigger" type="button" data-title="CapCut — Video Editing" data-description="Saya dapat menggunakan CapCut untuk mengedit video sederhana, seperti mengatur potongan klip, teks, transisi, dan tampilan visual. Saya masih terus belajar mengembangkan hasil editing yang lebih rapi dan kreatif.">
+            <span class="tool-logo tool-capcut" aria-hidden="true">✂</span><strong>CapCut</strong><small>Editing video</small><span class="tool-state">Learning &amp; Using ↗</span>
+          </button>
+        </div>
+
+        <!-- Core strengths yang sedang diasah; bisa diklik untuk melihat deskripsi. -->
+        <div class="learning-subheading reveal">
+          <div>
+            <p class="section-index">PERSONAL SKILLS / CORE STRENGTHS</p>
+            <h3>Growing Beyond <em>the Code</em></h3>
+            <p>Selain keterampilan teknis, saya juga terus mengembangkan kemampuan pribadi melalui tugas, kerja kelompok, dan pengalaman menjadi moderator webinar online.</p>
+          </div>
+        </div>
+        <div class="strength-grid">
+          <button class="strength-card reveal detail-trigger" type="button" data-title="Communication — Komunikasi" data-description="Saya berusaha menyampaikan ide dengan jelas dan mendengarkan orang lain. Pengalaman sebagai moderator webinar online membantu saya berlatih berbicara lebih percaya diri." ><span>☏</span><strong>Communication</strong><small>Komunikasi yang terus diasah</small></button>
+          <button class="strength-card reveal detail-trigger" type="button" data-title="Teamwork — Kerja Sama" data-description="Saya belajar bekerja sama, menghargai pendapat anggota tim, dan berkontribusi pada tugas kelompok. Bagi saya, hasil yang baik membutuhkan komunikasi dan tanggung jawab bersama." ><span>♡</span><strong>Teamwork</strong><small>Kolaborasi dan menghargai ide</small></button>
+          <button class="strength-card reveal detail-trigger" type="button" data-title="Critical Thinking — Berpikir Kritis" data-description="Saya sedang melatih diri untuk memahami permasalahan, mempertimbangkan informasi, dan mencari solusi secara logis, terutama ketika mengerjakan latihan pemrograman." ><span>✧</span><strong>Critical Thinking</strong><small>Belajar menganalisis masalah</small></button>
+          <button class="strength-card reveal detail-trigger" type="button" data-title="Time Management — Manajemen Waktu" data-description="Saya belajar mengatur waktu antara perkuliahan, pengerjaan tugas, dan kegiatan lainnya. Kemampuan ini masih terus saya perbaiki." ><span>◷</span><strong>Time Management</strong><small>Mengatur prioritas belajar</small></button>
+          <button class="strength-card reveal detail-trigger" type="button" data-title="Creativity — Kreativitas" data-description="Saya menikmati proses mengeksplorasi ide visual, warna, dan tipografi saat membuat desain cover buku dan mencoba desain website." ><span>✿</span><strong>Creativity</strong><small>Ide dan eksplorasi visual</small></button>
+          <button class="strength-card reveal detail-trigger" type="button" data-title="Adaptability — Adaptasi" data-description="Saya berusaha terbuka terhadap hal baru, mau belajar ketika menemui kesulitan, dan terus menyesuaikan diri dengan pengalaman serta tantangan yang berbeda." ><span>↝</span><strong>Adaptability</strong><small>Berani belajar hal baru</small></button>
+        </div>
+      </section>
+
+      <!-- BAGIAN 07: pengalaman di kiri, perjalanan belajar di kanan.
+           Layout ini mengikuti desain yang dipilih dan tetap responsif. -->
+      <section id="pengalaman" class="section container">
+        <div class="glass-panel experience-panel reveal">
+          <!-- Header: judul dan kalimat pembuka seimbang, tidak memanjang ke bawah -->
+          <header class="experience-head">
+            <div class="experience-headline">
+              <p class="section-index">08 / EXPERIENCE &amp; JOURNEY</p>
+              <h2>Langkah <em>Sejauh Ini</em></h2>
+              <p class="section-scribble">Progress over perfection. <span aria-hidden="true">✧</span></p>
+            </div>
+            <p class="experience-intro">Setiap peran membawa pengalaman, dan setiap pengalaman memberikan ruang untuk belajar dan berkembang.</p>
+          </header>
+
+          <div class="experience-columns">
+            <!-- KIRI: dua pengalaman nyata, masing-masing punya tombol lihat sertifikat -->
+            <div class="experience-work">
+              <div class="experience-work-frame">
+                <div class="experience-work-label"><span aria-hidden="true">✧</span> LEARNING BY DOING <span aria-hidden="true">✧</span></div>
+                <div class="experience-entries">
+                  <article class="experience-entry">
+                    <span class="tag">▦ &nbsp;30 Oktober 2025</span>
+                    <h3>Moderator<br>Workshop</h3>
+                    <p>Berperan sebagai moderator dalam workshop <strong>Pengembangan Kreativitas Personal dengan Teknologi Mixed Reality</strong> yang diselenggarakan oleh UKM R-TIK Universitas Muhammadiyah Bangka Belitung. Pengalaman ini membantu saya melatih komunikasi publik dan kepercayaan diri.</p>
+                    <button class="experience-cert-button" type="button" data-certificate-index="0" aria-label="Lihat sertifikat Moderator Workshop" title="Lihat sertifikat Moderator Workshop">↗</button>
+                  </article>
+                  <article class="experience-entry">
+                    <span class="tag">▦ &nbsp;26 Desember 2025</span>
+                    <h3>Pembawa<br>Acara</h3>
+                    <p>Berperan sebagai pembawa acara dalam seminar dan pelatihan <strong>Membuat Objek Basic 3D Design Menggunakan Software Blender 3.6</strong>. Melalui kegiatan ini, saya belajar membawakan acara secara terstruktur dan melatih kepercayaan diri.</p>
+                    <button class="experience-cert-button" type="button" data-certificate-index="1" aria-label="Lihat sertifikat Pembawa Acara" title="Lihat sertifikat Pembawa Acara">↗</button>
+                  </article>
+                </div>
+              </div>
+              <a class="text-button experience-link" href="#sertifikat">Lihat 2 Sertifikat Saya ↗</a>
+            </div>
+
+            <!-- KANAN: timeline perjalanan tetap ditampilkan, tiga tahap -->
+            <aside class="journey-list" aria-label="Perjalanan saya">
+              <h3>Perjalanan Saya <span aria-hidden="true">✧</span></h3>
+              <ol class="journey-items">
+                <li class="journey-item">
+                  <span class="journey-number" aria-hidden="true">01</span>
+                  <div class="journey-copy"><strong>Mahasiswi Ilmu Komputer</strong><small>Semester 5 — Universitas Muhammadiyah Bangka Belitung</small></div>
+                  <span class="journey-icon" aria-hidden="true">♧</span>
+                </li>
+                <li class="journey-item">
+                  <span class="journey-number" aria-hidden="true">02</span>
+                  <div class="journey-copy"><strong>Terus Mengeksplorasi</strong><small>Dasar pemrograman, front-end, dan analisis data.</small></div>
+                  <span class="journey-icon" aria-hidden="true">⌘</span>
+                </li>
+                <li class="journey-item">
+                  <span class="journey-number" aria-hidden="true">03</span>
+                  <div class="journey-copy"><strong>Belajar Melalui Pengalaman</strong><small>Desain cover buku, moderator, dan pembawa acara.</small></div>
+                  <span class="journey-icon" aria-hidden="true">✿</span>
+                </li>
+              </ol>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section id="sertifikat" class="section container certificates-section">
+        <img class="cert-flower" src="assets/lily-pink-transparent.webp" alt="" aria-hidden="true" loading="lazy">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-index">09 / CERTIFICATES &amp; ACHIEVEMENTS</p>
+            <h2>Moments of <em>Growth</em> <span class="flower-text">✿</span></h2>
+            <p>Dua sertifikat asli dari pengalaman saya dalam kegiatan akademik. Klik kartu untuk melihat dokumen lebih besar.</p>
+          </div>
+          <span class="label-flower">✧ Small moments, meaningful steps ✧</span>
+        </div>
+        <div class="certificate-grid certificate-grid-real">
+          <button class="certificate-card cert-real-card reveal detail-trigger" type="button" data-gallery="certificates"
+                  data-title="Sertifikat Moderator — Workshop Mixed Reality"
+                  data-description="Sertifikat sebagai moderator workshop ‘Pengembangan Kreativitas Personal dengan Teknologi Mixed Reality’, diselenggarakan oleh UKM R-TIK Universitas Muhammadiyah Bangka Belitung pada 30 Oktober 2025."
+                  data-image="assets/sertifikat-moderator.webp" aria-label="Perbesar sertifikat moderator tanggal 30 Oktober 2025">
+            <span class="certificate-visual cert-image"><img src="assets/sertifikat-moderator.webp" loading="lazy" alt="Sertifikat asli Aisyah Artika Sari sebagai Moderator, 30 Oktober 2025"><span class="cert-zoom" aria-hidden="true">Perbesar ↗</span></span>
+            <span class="certificate-info"><span class="cert-label">01 · MODERATOR</span><strong>Workshop Mixed Reality</strong><small>UKM R-TIK · 30 Oktober 2025</small><span>Lihat sertifikat asli ↗</span></span>
+          </button>
+          <button class="certificate-card cert-real-card reveal detail-trigger" type="button" data-gallery="certificates"
+                  data-title="Sertifikat Pembawa Acara — Pelatihan Blender 3.6"
+                  data-description="Sertifikat sebagai Pembawa Acara pada kegiatan seminar dan pelatihan ‘Membuat Objek Basic 3D Design Menggunakan Software Blender 3.6’, 26 Desember 2025."
+                  data-image="assets/sertifikat-pembawa-acara.webp" aria-label="Perbesar sertifikat pembawa acara tanggal 26 Desember 2025">
+            <span class="certificate-visual cert-image"><img src="assets/sertifikat-pembawa-acara.webp" loading="lazy" alt="Sertifikat asli Aisyah Artika Sari sebagai Pembawa Acara, 26 Desember 2025"><span class="cert-zoom" aria-hidden="true">Perbesar ↗</span></span>
+            <span class="certificate-info"><span class="cert-label">02 · PEMBAWA ACARA</span><strong>Seminar &amp; Pelatihan Blender 3.6</strong><small>26 Desember 2025</small><span>Lihat sertifikat asli ↗</span></span>
+          </button>
+        </div>
+        <p class="certificate-note reveal">✿ Kedua sertifikat di atas merupakan dokumen asli dari kegiatan yang saya ikuti.</p>
+      </section>
+
+      <section id="prinsip" class="section container">
+        <img class="floral-accent floral-philosophy" src="assets/lily-watercolor-transparent.webp" alt="" aria-hidden="true" loading="lazy">
+        <div class="section-heading reveal"><div><p class="section-index">10 / MY PHILOSOPHY</p><h2>Words I <em>Hold Close</em> ✿</h2></div></div>
+        <div class="philosophy-grid">
+          <article class="glass-panel philosophy-card reveal"><span class="philosophy-icon">✿</span><p class="card-overline">MY LIFE MOTTO</p><h3>“Terbentur, terbentur, terbentur, terbentuk.”</h3><p class="motto-author">— Tan Malaka</p><p>Setiap tantangan dan kesalahan dapat menjadi bagian dari proses belajar dan memperbaiki diri.</p></article>
+          <article class="glass-panel philosophy-card verse-card reveal"><span class="philosophy-icon">❁</span><p class="card-overline">A VERSE I HOLD CLOSE</p><p class="arabic" lang="ar" dir="rtl">فَإِنَّ مَعَ الْعُسْرِ يُسْرًا ۝ إِنَّ مَعَ الْعُسْرِ يُسْرًا</p><h3>“Sesungguhnya beserta kesulitan ada kemudahan.”</h3><p>QS. Al-Insyirah (94): 5–6 — pengingat untuk tetap berusaha, bersabar, dan berharap kepada Allah SWT.</p></article>
+          <article class="glass-panel philosophy-card reveal"><span class="philosophy-icon">♡</span><p class="card-overline">MY LITTLE REMINDER</p><h3>“I may grow quietly, but I will never stop blooming.”</h3><p>Saya mungkin berkembang secara perlahan, tetapi saya ingin terus belajar dan bertumbuh.</p></article>
+        </div>
+      </section>
+
+      <section id="kontak" class="section container contact-section">
+        <img class="floral-accent floral-contact" src="assets/lily-pink-transparent.webp" alt="" aria-hidden="true" loading="lazy">
+        <div class="glass-panel contact-panel reveal">
+          <div><p class="section-index">11 / LET'S CONNECT</p><h2>Mari <em>Terhubung</em> ✿</h2><p>Terima kasih sudah berkunjung ke ruang kecil saya. Portofolio ini dibuat untuk tugas kuliah dan mendokumentasikan proses belajar saya. Saya terbuka untuk berbagi pengalaman dan belajar hal-hal baru.</p>
+            <div class="contact-links" aria-label="Kontak Aisyah">
+              <a class="contact-link" href="https://www.instagram.com/aissyartka/" target="_blank" rel="noopener noreferrer" aria-label="Instagram aissyartka, buka tab baru"><span class="contact-link-icon" aria-hidden="true">◎</span><span><small>INSTAGRAM</small><strong>@aissyartka</strong></span><span aria-hidden="true">↗</span></a>
+              <a class="contact-link" href="https://github.com/aisyahartikasari06" target="_blank" rel="noopener noreferrer" aria-label="GitHub Aisyah Artika Sari, buka tab baru"><span class="contact-link-icon" aria-hidden="true">⌘</span><span><small>GITHUB</small><strong>github.com/aisyahartikasari06</strong></span><span aria-hidden="true">↗</span></a>
+              <a class="contact-link" href="mailto:aisyahas627@gmail.com" aria-label="Kirim email ke aisyahas627@gmail.com"><span class="contact-link-icon" aria-hidden="true">✉</span><span><small>EMAIL</small><strong>aisyahas627@gmail.com</strong></span><span aria-hidden="true">↗</span></a>
+              <a class="contact-link" href="tel:+6281271136724" aria-label="Telepon 081271136724"><span class="contact-link-icon" aria-hidden="true">☎</span><span><small>NO. HP</small><strong>081271136724</strong></span><span aria-hidden="true">↗</span></a>
+            </div><p class="contact-sign">Keep growing, Aisyah ♡</p></div>
+          <form id="contactForm" class="contact-form">
+            <p class="contact-form-heading">✿ Tulis Pesan</p>
+            <p class="contact-form-intro">Isi nama dan pesanmu, lalu pilih aplikasi untuk mengirimkannya.</p>
+            <div class="form-field">
+              <label for="visitorName">Nama</label>
+              <input id="visitorName" type="text" placeholder="Nama kamu" autocomplete="name" maxlength="80" required>
+            </div>
+            <div class="form-field">
+              <label for="visitorMessage">Pesan</label>
+              <textarea id="visitorMessage" rows="5" placeholder="Tulis pesan di sini..." maxlength="1500" required></textarea>
+            </div>
+            <div class="contact-form-actions">
+              <button type="submit" class="button button-primary">Lanjutkan via WhatsApp <span aria-hidden="true">↗</span></button>
+              <button type="button" id="emailMessageButton" class="button button-outline">Buka Email <span aria-hidden="true">↗</span></button>
+            </div>
+            <p id="contactFeedback" class="form-feedback" role="status">Pesan akan dibuka di WhatsApp atau aplikasi email kamu. <strong>Belum terkirim otomatis</strong>—tekan Kirim di aplikasi tersebut.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container"><div><span class="logo">A<span>✿</span></span><small>Made with care, curiosity & code.</small></div><p>© <span id="year"></span> Aisyah Artika Sari</p><button id="backToCover" class="text-button" type="button">Lihat cover lagi ↑</button></footer>
+  </div>
+
+  <!-- Popup modal bisa dibuka dari kartu Learning -->
+  <dialog id="detailDialog" class="detail-dialog" aria-labelledby="detailTitle"><button id="closeDialog" class="dialog-close" type="button" aria-label="Tutup detail">✕</button><span class="flower-text">✿</span><p class="section-index" id="detailOverline">EXPLORE MORE</p><h2 id="detailTitle"></h2><img id="detailImage" class="dialog-image" alt="Dokumentasi yang dipilih" hidden><p id="detailDescription"></p><div id="galleryControls" class="gallery-controls" hidden><button id="galleryPrev" class="gallery-nav" type="button" aria-label="Lihat gambar sebelumnya">← Sebelumnya</button><span id="galleryPosition" aria-live="polite"></span><button id="galleryNext" class="gallery-nav" type="button" aria-label="Lihat gambar selanjutnya">Berikutnya →</button></div><button class="button button-primary" id="closeDialogBottom" type="button">Tutup</button></dialog>
+</body>
+</html>
